@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>蘋果成績表v7</title>
-  <script src="../d3.v7.min.js"></script>
+  <script src="./d3.v7.min.js"></script>
   <style>
     @font-face {
         font-family:'CircleFont'; /* src: url(https://circle472.github.io/ct2022s/hw04/CircleFont.ttf);  https://github.com/circle472/ct2022s/ */
@@ -163,7 +163,7 @@
                 .html((d, i) => {
                     if (i == 4 && d != 'GitHub') {
                         let randomNumber = Math.floor(Math.random() * 4) + 1;
-                        let imageFileName = '0' + randomNumber + '.png';
+                        let imageFileName = randomNumber + '.png';
                         let imageSource = '../img/' + imageFileName;
                         return `<img src="${imageSource}" width="50" height="50"><hr><a href="https://github.com/${d}/vis2023f/" target="_blank">${d}</a>`;
                     } else {
