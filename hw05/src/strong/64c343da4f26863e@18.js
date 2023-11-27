@@ -217,7 +217,7 @@ simulation => {
 )}
 
 function _simple(FileAttachment){return(
-FileAttachment("simple(分數版).json").json()
+FileAttachment("simple(分數版)@1.json").json()
 )}
 
 function _url_list(){return(
@@ -240,7 +240,7 @@ export default function define(runtime, observer) {
   const main = runtime.module();
   function toString() { return this.url; }
   const fileAttachments = new Map([
-    ["simple(分數版).json", {url: new URL("./files/d002ab5d712cae7ecc3f403689428d1a8d36a2bf23fb45c4be26d5c64968f39530ccb22214914b68e2209eb5f65dd7565adc4c08339256f5307f65fd1599c31e.json", import.meta.url), mimeType: "application/json", toString}]
+    ["simple(分數版)@1.json", {url: new URL("./files/0d6c898de1d8466548f0adf2ba732e12b0b75adadb50facd575ac18dd79f7681831153f11fdc72d9e5049e377f3e54d7e99d6d74886504845a148db0b544953b.json", import.meta.url), mimeType: "application/json", toString}]
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], _1);
