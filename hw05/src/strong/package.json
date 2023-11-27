@@ -1,0 +1,14 @@
+{
+  "name": "64c343da4f26863e",
+  "main": "64c343da4f26863e@13.js",
+  "version": "13.0.0",
+  "homepage": "https://observablehq.com/d/64c343da4f26863e",
+  "author": {
+    "name": "北科大-劉俊廷's Workspace",
+    "url": "https://observablehq.com/@bei-ke-da-liu-jun-ting-ws"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
